@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Daffa Fakhuddin Arrozy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-family: 'Open Sans', sans-serif">My Book</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a>Sosial Media</a>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/daffatgi02">Instagram</a>
+              </li>
+              <li><a href="https://github.com/daffatgi02">Github</a></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCTOUX6tdSrlLyg5hy_N1LsQ"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><button id="show-bio">My Profile</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="article-container">
+        <h2 id="article-title"></h2>
+        <div id="article-content"></div>
+      </article>
+
+      <div id="button-container">
+        <button id="prev-button" disabled>Previous</button>
+        <button id="next-button">Next</button>
+      </div>
+      <aside>
+        <div class="bio">
+          <h3 style="text-align: center">Content Creator</h3>
+          <img
+            src="https://avatars.githubusercontent.com/u/73890002?v=4"
+            width="150"
+            height="190"
+            style="vertical-align: middle; margin: 0px 50px"
+          />
+          <ul>
+            <li><strong>Name:</strong> Daffa Fakhuddin Arrozy</li>
+            <li><strong>Email:</strong> daffatgi02@gmail.com</li>
+            <li><strong>Bangkit Academy</strong></li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2023 Daffa Fakhuddin Arrozy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  <script>
+    const showBioButton = document.getElementById("show-bio");
+    const bio = document.querySelector("aside");
+
+    showBioButton.addEventListener("click", () => {
+      if (bio.classList.contains("show")) {
+        bio.classList.remove("show");
+      } else {
+        bio.classList.add("show");
+      }
+    });
+  </script>
+</html>

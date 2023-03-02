@@ -1,40 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TGI</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>Daffa Fakhuddin Arrozy</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Beranda</a></li>
-				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="#">Kontak</a></li>
-			</ul>
-		</nav>
-	</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Daffa Fakhuddin Arrozy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-family: 'Open Sans', sans-serif">My Book</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a>Sosial Media</a>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/daffatgi02">Instagram</a>
+              </li>
+              <li><a href="https://github.com/daffatgi02">Github</a></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCTOUX6tdSrlLyg5hy_N1LsQ"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><button id="show-bio">My Profile</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <article>
+          <h2>Pentingnya Keamanan Data di Era Digital</h2>
+          <p>
+            Artikel ini membahas mengenai pentingnya menjaga keamanan data
+            pribadi dan perusahaan di era digital. Dalam artikel ini, akan
+            dibahas juga mengenai jenis-jenis serangan siber yang dapat merusak
+            data serta langkah-langkah yang dapat dilakukan untuk menghindari
+            serangan tersebut.
+          </p>
+        </article>
+        <article>
+          <h2>Meningkatkan Produktivitas dengan Teknologi Cloud</h2>
+          <p>
+            Artikel ini akan membahas mengenai keuntungan yang diperoleh dengan menggunakan teknologi cloud dalam meningkatkan produktivitas kerja. Dalam artikel ini, akan dijelaskan mengenai cara kerja teknologi cloud, jenis layanan cloud yang tersedia serta manfaat yang dapat diperoleh dengan memanfaatkannya.
+          </p>
+        </article>
+      </div>
+      <div class="containerbutton">
+        <a href="/article/index.html"><button class="button">Baca Artikel</button></a>
+      </div>
 
-	<main>
-		<article>
-			<h2>Artikel Pertama</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et libero eu nisi tincidunt efficitur. Sed porttitor mauris vel lacinia mattis. Nam vitae felis nec mauris viverra rhoncus. Fusce ac sagittis mauris. Sed dapibus, dolor at venenatis porttitor, turpis mauris suscipit ex, vel laoreet lacus quam eget nulla. Suspendisse dignissim mi nisl, ac pretium arcu maximus sit amet.</p>
-		</article>
+      <aside>
+        <div class="bio">
+          <h3 style="text-align: center">Content Creator</h3>
+          <img
+            src="https://avatars.githubusercontent.com/u/73890002?v=4"
+            width="150"
+            height="190"
+            style="vertical-align: middle; margin: 0px 50px"
+          />
+          <ul>
+            <li><strong>Name:</strong> Daffa Fakhuddin Arrozy</li>
+            <li><strong>Email:</strong> daffatgi02@gmail.com</li>
+            <li><strong>Bangkit Academy</strong></li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2023 Daffa Fakhuddin Arrozy. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script>
+    const showBioButton = document.getElementById("show-bio");
+    const bio = document.querySelector("aside");
 
-        <aside>
-            <h3>Data Diri</h3>
-            <img src="https://avatars.githubusercontent.com/u/73890002?v=4" alt="Foto Profil">
-            <p>Nama: John Doe</p>
-            <p>Jurusan: Informatika</p>
-        </aside>
-        
-	</main>
-
-	<footer>
-		<p>Hak Cipta &copy; 2023 TGI. All rights reserved.</p>
-	</footer>
-
-</body>
+    showBioButton.addEventListener("click", () => {
+      if (bio.classList.contains("show")) {
+        bio.classList.remove("show");
+      } else {
+        bio.classList.add("show");
+      }
+    });
+  </script>
 </html>
