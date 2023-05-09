@@ -1,0 +1,117 @@
+.navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    .navbar-brand img {
+      width: 100px;
+    }
+    .navbar .container-fluid {
+      flex-direction: column;
+    }
+    .navbar .navbar-nav .nav-item {
+      padding: 0.5em 1em;
+    }
+    .navbar-nav {
+      border-bottom: 2px solid #fff;
+    }
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav {
+    border-top: 2px solid #fff;
+    margin-top: 0.5em;
+  }
+  
+ /* button navbar animated
+  .tgibtn {
+    border: none;
+    background: none;
+  }
+  
+  .tgibtn span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  .tgibtn svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .tgibtn:hover svg {
+    transform: translateX(0);
+  }
+  
+  .tgibtn:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: rgb(248, 248, 248);
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .tgibtn:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
+
+  button {
+    font-size: 18px;
+    color: #e1e1e1;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #fff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
