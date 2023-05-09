@@ -78,7 +78,7 @@
     transform-origin: bottom left;
   } */
 
-  button {
+  .tgibtn {
     font-size: 18px;
     color: #e1e1e1;
     cursor: pointer;
@@ -91,18 +91,18 @@
     transition-property: color;
   }
   
-  button:focus,
-  button:hover {
+  .tgibtn:focus,
+  .tgibtn:hover {
     color: #fff;
   }
   
-  button:focus:after,
-  button:hover:after {
+  .tgibtn:focus:after,
+  .tgibtn:hover:after {
     width: 100%;
     left: 0%;
   }
   
-  button:after {
+  .tgibtn:after {
     content: "";
     pointer-events: none;
     bottom: -2px;
